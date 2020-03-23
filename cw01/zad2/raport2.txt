@@ -1,0 +1,296 @@
+JEDNA PARA
+
+PODOBNE
+./zad create_table 1 compare_pairs pliki/podobne/a.txt:pliki/podobne/b.txt remove_operation 0 0 remove_block 0
+Create table:
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Compare pairs:
+pliki/podobne/a.txt pliki/podobne/b.txt
+diff pliki/podobne/a.txt pliki/podobne/b.txt > temp.txt
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+Removing operation: 0 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Total time:
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+PRAWIE PODOBNE
+./zad create_table 1 compare_pairs pliki/prawie_podobne/a.txt:pliki/prawie_podobne/b.txt remove_operation 0 0 remove_block 0
+Create table:
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Compare pairs:
+pliki/prawie_podobne/a.txt pliki/prawie_podobne/b.txt
+diff pliki/prawie_podobne/a.txt pliki/prawie_podobne/b.txt > temp.txt
+Real Time: 0.010000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+Removing operation: 0 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Total time:
+Real Time: 0.010000, User Time: 0.000000, System Time: 0.000000
+
+NIEPODOBNE
+./zad create_table 1 compare_pairs pliki/niepodobne/a.txt:pliki/niepodobne/b.txt remove_operation 0 0 remove_block 0
+Create table:
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Compare pairs:
+pliki/niepodobne/a.txt pliki/niepodobne/b.txt
+diff pliki/niepodobne/a.txt pliki/niepodobne/b.txt > temp.txt
+Real Time: 0.010000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+Removing operation: 0 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Total time:
+Real Time: 0.010000, User Time: 0.000000, System Time: 0.000000
+
+
+TRZY PARY
+
+PODOBNE
+./zad create_table 3 compare_pairs pliki/podobne/a.txt:pliki/podobne/b.txt pliki/podobne/c.txt:pliki/podobne/d.txt pliki/podobne/e.txt:pliki/podobne/f.txt remove_operation 0 0 remove_operation 0 1 remove_block 0 remove_block 0
+Create table:
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Compare pairs:
+pliki/podobne/a.txt pliki/podobne/b.txt
+pliki/podobne/c.txt pliki/podobne/d.txt
+pliki/podobne/e.txt pliki/podobne/f.txt
+diff pliki/podobne/a.txt pliki/podobne/b.txt > temp.txt
+diff pliki/podobne/c.txt pliki/podobne/d.txt > temp.txt
+diff pliki/podobne/e.txt pliki/podobne/f.txt > temp.txt
+Real Time: 0.020000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+Removing operation: 0 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+Removing operation: 1 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Total time:
+Real Time: 0.020000, User Time: 0.000000, System Time: 0.000000
+
+PRAWIE PODOBNE
+./zad create_table 3 compare_pairs pliki/prawie_podobne/a.txt:pliki/prawie_podobne/b.txt pliki/prawie_podobne/c.txt:pliki/prawie_podobne/d.txt pliki/prawie_podobne/e.txt:pliki/prawie_podobne/f.txt  remove_operation 0 0 remove_operation 0 1 remove_block 0 remove_block 0
+Create table:
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Compare pairs:
+pliki/prawie_podobne/a.txt pliki/prawie_podobne/b.txt
+pliki/prawie_podobne/c.txt pliki/prawie_podobne/d.txt
+pliki/prawie_podobne/e.txt pliki/prawie_podobne/f.txt
+diff pliki/prawie_podobne/a.txt pliki/prawie_podobne/b.txt > temp.txt
+diff pliki/prawie_podobne/c.txt pliki/prawie_podobne/d.txt > temp.txt
+diff pliki/prawie_podobne/e.txt pliki/prawie_podobne/f.txt > temp.txt
+Real Time: 0.020000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+Removing operation: 0 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+ERROR: Out of range
+Removing operation: 1 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Total time:
+Real Time: 0.020000, User Time: 0.000000, System Time: 0.000000
+
+NIEPODOBNE
+./zad create_table 3 compare_pairs pliki/niepodobne/a.txt:pliki/niepodobne/b.txt pliki/niepodobne/c.txt:pliki/niepodobne/d.txt pliki/niepodobne/e.txt:pliki/niepodobne/f.txt remove_operation 0 0 remove_operation 0 1 remove_block 0 remove_block 0
+Create table:
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Compare pairs:
+pliki/niepodobne/a.txt pliki/niepodobne/b.txt
+pliki/niepodobne/c.txt pliki/niepodobne/d.txt
+pliki/niepodobne/e.txt pliki/niepodobne/f.txt
+diff pliki/niepodobne/a.txt pliki/niepodobne/b.txt > temp.txt
+diff pliki/niepodobne/c.txt pliki/niepodobne/d.txt > temp.txt
+diff pliki/niepodobne/e.txt pliki/niepodobne/f.txt > temp.txt
+Real Time: 0.020000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+Removing operation: 0 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+ERROR: Out of range
+Removing operation: 1 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Total time:
+Real Time: 0.020000, User Time: 0.000000, System Time: 0.000000
+
+
+PIĘĆ PAR
+
+PODOBNE
+./zad create_table 5 compare_pairs pliki/podobne/a.txt:pliki/podobne/b.txt pliki/podobne/c.txt:pliki/podobne/d.txt pliki/podobne/e.txt:pliki/podobne/f.txt pliki/podobne/g.txt:pliki/podobne/h.txt pliki/podobne/i.txt:pliki/podobne/j.txt remove_operation 0 0 remove_operation 0 1 remove_block 1 remove_block 0 remove_block 0
+Create table:
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Compare pairs:
+pliki/podobne/a.txt pliki/podobne/b.txt
+pliki/podobne/c.txt pliki/podobne/d.txt
+pliki/podobne/e.txt pliki/podobne/f.txt
+pliki/podobne/g.txt pliki/podobne/h.txt
+pliki/podobne/i.txt pliki/podobne/j.txt
+diff pliki/podobne/a.txt pliki/podobne/b.txt > temp.txt
+diff pliki/podobne/c.txt pliki/podobne/d.txt > temp.txt
+diff pliki/podobne/e.txt pliki/podobne/f.txt > temp.txt
+diff pliki/podobne/g.txt pliki/podobne/h.txt > temp.txt
+diff pliki/podobne/i.txt pliki/podobne/j.txt > temp.txt
+Real Time: 0.030000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+Removing operation: 0 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+Removing operation: 1 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 1
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Total time:
+Real Time: 0.030000, User Time: 0.000000, System Time: 0.000000
+
+PRAWIE PODOBNE
+./zad create_table 5 compare_pairs pliki/prawie_podobne/a.txt:pliki/prawie_podobne/b.txt pliki/prawie_podobne/c.txt:pliki/prawie_podobne/d.txt pliki/prawie_podobne/e.txt:pliki/prawie_podobne/f.txt pliki/prawie_podobne/g.txt:pliki/prawie_podobne/h.txt pliki/prawie_podobne/i.txt:pliki/prawie_podobne/j.txt remove_operation 0 0 remove_operation 0 1 remove_block 1 remove_block 0 remove_block 0
+Create table:
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Compare pairs:
+pliki/prawie_podobne/a.txt pliki/prawie_podobne/b.txt
+pliki/prawie_podobne/c.txt pliki/prawie_podobne/d.txt
+pliki/prawie_podobne/e.txt pliki/prawie_podobne/f.txt
+pliki/prawie_podobne/g.txt pliki/prawie_podobne/h.txt
+pliki/prawie_podobne/i.txt pliki/prawie_podobne/j.txt
+diff pliki/prawie_podobne/a.txt pliki/prawie_podobne/b.txt > temp.txt
+diff pliki/prawie_podobne/c.txt pliki/prawie_podobne/d.txt > temp.txt
+diff pliki/prawie_podobne/e.txt pliki/prawie_podobne/f.txt > temp.txt
+diff pliki/prawie_podobne/g.txt pliki/prawie_podobne/h.txt > temp.txt
+diff pliki/prawie_podobne/i.txt pliki/prawie_podobne/j.txt > temp.txt
+Real Time: 0.030000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+Removing operation: 0 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+ERROR: Out of range
+Removing operation: 1 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 1
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Total time:
+Real Time: 0.030000, User Time: 0.000000, System Time: 0.000000
+
+NIEPODOBNE
+./zad create_table 5 compare_pairs pliki/niepodobne/a.txt:pliki/niepodobne/b.txt pliki/niepodobne/c.txt:pliki/niepodobne/d.txt pliki/niepodobne/e.txt:pliki/niepodobne/f.txt pliki/niepodobne/g.txt:pliki/niepodobne/h.txt pliki/niepodobne/i.txt:pliki/niepodobne/j.txt remove_operation 0 0 remove_operation 0 1 remove_block 1 remove_block 0 remove_block 0
+Create table:
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Compare pairs:
+pliki/niepodobne/a.txt pliki/niepodobne/b.txt
+pliki/niepodobne/c.txt pliki/niepodobne/d.txt
+pliki/niepodobne/e.txt pliki/niepodobne/f.txt
+pliki/niepodobne/g.txt pliki/niepodobne/h.txt
+pliki/niepodobne/i.txt pliki/niepodobne/j.txt
+diff pliki/niepodobne/a.txt pliki/niepodobne/b.txt > temp.txt
+diff pliki/niepodobne/c.txt pliki/niepodobne/d.txt > temp.txt
+diff pliki/niepodobne/e.txt pliki/niepodobne/f.txt > temp.txt
+diff pliki/niepodobne/g.txt pliki/niepodobne/h.txt > temp.txt
+diff pliki/niepodobne/i.txt pliki/niepodobne/j.txt > temp.txt
+Real Time: 0.040000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+Removing operation: 0 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove operation:
+ERROR: Out of range
+Removing operation: 1 from block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 1
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Remove block:
+Removing block: 0
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Total time:
+Real Time: 0.040000, User Time: 0.000000, System Time: 0.000000

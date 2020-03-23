@@ -1,0 +1,3 @@
+biblioteka statyczna (static) ma najlepszy czas wykonania
+biblioteka współdzielona (shared) trochę gorszy
+biblioteka dynamiczna (dynamic) ma najgorszy z tych trzech

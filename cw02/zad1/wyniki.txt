@@ -1,0 +1,176 @@
+WNIOSKI:
+Dla plików składających się z 1-bajtowych linii kopiowanie i sortowanie jest szybsze dla funkcji bibliotecznych (lib). Wynika to z tego, że te funkcje korzystają z mechanizmu buforowania (co się przydaje przy takim formacie danych). Natomiast dla plików zawierjących już więcej bajtów w linii operacje są szybsze dla funkcji systemowych (sys), ponieważ buforowanie nie ma już takiego wpływu.
+
+
+
+
+
+
+1-byte length, 10000 lines
+Copy plik plik_sys 10000 1 sys: 
+Real Time: 0.040000, User Time: 0.000000, System Time: 0.030000
+
+Copy plik plik_lib 10000 1 lib: 
+Real Time: 0.020000, User Time: 0.000000, System Time: 0.020000
+
+Sort plik_sys 10000 1 sys: 
+Real Time: 2.310000, User Time: 0.930000, System Time: 1.370000
+
+Sort plik_lib 10000 1 lib: 
+Real Time: 1.490000, User Time: 0.680000, System Time: 0.800000
+
+
+1-byte length, 20000 lines
+Copy plik plik_sys 20000 1 sys: 
+Real Time: 0.090000, User Time: 0.010000, System Time: 0.070000
+
+Copy plik plik_lib 20000 1 lib: 
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Sort plik_sys 20000 1 sys: 
+Real Time: 7.870000, User Time: 3.550000, System Time: 4.300000
+
+Sort plik_lib 20000 1 lib: 
+Real Time: 4.530000, User Time: 2.460000, System Time: 2.050000
+
+
+4-byte length, 20000 lines
+Copy plik plik_sys 20000 4 sys: 
+Real Time: 0.080000, User Time: 0.010000, System Time: 0.060000
+
+Copy plik plik_lib 20000 4 lib: 
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Sort plik_sys 20000 4 sys: 
+Real Time: 2.870000, User Time: 0.800000, System Time: 2.050000
+
+Sort plik_lib 20000 4 lib: 
+Real Time: 3.290000, User Time: 1.080000, System Time: 2.190000
+
+
+4-byte length, 40000 lines
+Copy plik plik_sys 40000 4 sys: 
+Real Time: 0.180000, User Time: 0.010000, System Time: 0.140000
+
+Copy plik plik_lib 40000 4 lib: 
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+
+Sort plik_sys 40000 4 sys: 
+Real Time: 5.650000, User Time: 1.460000, System Time: 4.170000
+
+Sort plik_lib 40000 4 lib: 
+Real Time: 7.060000, User Time: 2.240000, System Time: 4.810000
+
+
+512-byte length, 20000 lines
+Copy plik plik_sys 20000 512 sys: 
+Real Time: 0.100000, User Time: 0.010000, System Time: 0.080000
+
+Copy plik plik_lib 20000 512 lib: 
+Real Time: 0.050000, User Time: 0.000000, System Time: 0.020000
+
+Sort plik_sys 20000 512 sys: 
+Real Time: 3.820000, User Time: 1.890000, System Time: 1.920000
+
+Sort plik_lib 20000 512 lib: 
+Real Time: 5.110000, User Time: 2.460000, System Time: 2.640000
+
+
+512-byte length, 40000 lines
+Copy plik plik_sys 40000 512 sys: 
+Real Time: 0.220000, User Time: 0.030000, System Time: 0.180000
+
+Copy plik plik_lib 40000 512 lib: 
+Real Time: 0.120000, User Time: 0.000000, System Time: 0.050000
+
+Sort plik_sys 40000 512 sys: 
+Real Time: 8.630000, User Time: 4.190000, System Time: 4.420000
+
+Sort plik_lib 40000 512 lib: 
+Real Time: 10.850000, User Time: 5.210000, System Time: 5.630000
+
+
+1024-byte length, 20000 lines
+Copy plik plik_sys 20000 1024 sys: 
+Real Time: 0.180000, User Time: 0.040000, System Time: 0.130000
+
+Copy plik plik_lib 20000 1024 lib: 
+Real Time: 0.120000, User Time: 0.000000, System Time: 0.060000
+
+Sort plik_sys 20000 1024 sys: 
+Real Time: 4.950000, User Time: 2.960000, System Time: 1.980000
+
+Sort plik_lib 20000 1024 lib: 
+Real Time: 6.270000, User Time: 3.350000, System Time: 2.910000
+
+
+1024-byte length, 40000 lines
+Copy plik plik_sys 40000 1024 sys: 
+Real Time: 0.260000, User Time: 0.020000, System Time: 0.230000
+
+Copy plik plik_lib 40000 1024 lib: 
+Real Time: 0.260000, User Time: 0.010000, System Time: 0.140000
+
+Sort plik_sys 40000 1024 sys: 
+Real Time: 10.980000, User Time: 6.570000, System Time: 4.390000
+
+Sort plik_lib 40000 1024 lib: 
+Real Time: 13.840000, User Time: 7.580000, System Time: 6.240000
+
+
+4096-byte length, 10000 lines
+Copy plik plik_sys 10000 4096 sys: 
+Real Time: 0.060000, User Time: 0.010000, System Time: 0.050000
+
+Copy plik plik_lib 10000 4096 lib: 
+Real Time: 0.250000, User Time: 0.000000, System Time: 0.140000
+
+Sort plik_sys 10000 4096 sys: 
+Real Time: 5.540000, User Time: 4.190000, System Time: 1.330000
+
+Sort plik_lib 10000 4096 lib: 
+Real Time: 6.320000, User Time: 4.520000, System Time: 1.780000
+
+
+4096-byte length, 20000 lines
+Copy plik plik_sys 20000 4096 sys: 
+Real Time: 0.140000, User Time: 0.010000, System Time: 0.120000
+
+Copy plik plik_lib 20000 4096 lib: 
+Real Time: 0.540000, User Time: 0.030000, System Time: 0.260000
+
+Sort plik_sys 20000 4096 sys: 
+Real Time: 11.070000, User Time: 8.380000, System Time: 2.610000
+
+Sort plik_lib 20000 4096 lib: 
+Real Time: 12.690000, User Time: 9.380000, System Time: 3.220000
+
+
+8192-byte length, 7000 lines
+Copy plik plik_sys 7000 8192 sys: 
+Real Time: 0.070000, User Time: 0.000000, System Time: 0.060000
+
+Copy plik plik_lib 7000 8192 lib: 
+Real Time: 0.300000, User Time: 0.020000, System Time: 0.140000
+
+Sort plik_sys 7000 8192 sys: 
+Real Time: 6.260000, User Time: 5.210000, System Time: 1.030000
+
+Sort plik_lib 7000 8192 lib: 
+Real Time: 6.960000, User Time: 5.450000, System Time: 1.430000
+
+
+8192-byte length, 14000 lines
+Copy plik plik_sys 14000 8192 sys: 
+Real Time: 0.240000, User Time: 0.020000, System Time: 0.210000
+
+Copy plik plik_lib 14000 8192 lib: 
+Real Time: 0.680000, User Time: 0.030000, System Time: 0.300000
+
+Sort plik_sys 14000 8192 sys: 
+Real Time: 13.440000, User Time: 11.150000, System Time: 2.250000
+
+Sort plik_lib 14000 8192 lib: 
+Real Time: 14.260000, User Time: 11.420000, System Time: 2.800000
+
+

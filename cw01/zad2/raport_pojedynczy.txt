@@ -1,0 +1,10 @@
+Create table:
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+Compare pairs:
+Real Time: 0.020000, User Time: 0.000000, System Time: 0.000000
+Remove operation:
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+Remove block:
+Real Time: 0.000000, User Time: 0.000000, System Time: 0.000000
+Total time:
+Real Time: 0.020000, User Time: 0.000000, System Time: 0.000000

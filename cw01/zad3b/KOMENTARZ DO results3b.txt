@@ -1,0 +1,2 @@
+przy zwiększaniu poziomu optymalizacji (numer przy O) w przypadku tego programu było widać niewielkie zmiany na korzyść wyższych poziomów
+poziom 's' natomiast zmniejszyć minimalnie rozmiar pliku

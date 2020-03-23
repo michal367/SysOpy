@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "chrono": "c",
+        "sstream": "c",
+        "stdio.h": "c",
+        "ftw.h": "c"
+    }
+}

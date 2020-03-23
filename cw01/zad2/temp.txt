@@ -1,0 +1,12 @@
+6c6
+< house
+---
+> jutish
+34c34
+< dedication
+---
+> unrespirable
+43c43
+< medieval
+---
+> medill
