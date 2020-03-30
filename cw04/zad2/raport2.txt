@@ -1,0 +1,52 @@
+Wnioski:
+Na procesie macierzystym działały wszystkie opcje.
+Na procesie potomnym przy wykorzystaniu tylko forka działały wszystkie opcje, oprócz pending - proces potomny nie miał sygnału w oczekujących.
+Na procesie potomnym przy wykorzystaniu execa była taka sama sytuacja jak przy samym forku.
+
+
+
+
+# FORK
+# IGNORE
+./main fork ignore
+PARENT:
+CHILD:
+
+# HANDLER
+./main fork handler
+PARENT:
+Odebrano sygnał SIGUSR (10)
+CHILD:
+Odebrano sygnał SIGUSR (10)
+
+# MASK
+./main fork mask
+PARENT:
+CHILD:
+
+# PENDING
+./main fork pending
+PARENT:
+SIGUSR1 is pending
+CHILD:
+SIGUSR1 is not pending
+
+
+
+# EXEC
+# IGNORE
+./main exec ignore
+PARENT:
+CHILD:
+
+# MASK
+./main exec mask
+PARENT:
+CHILD:
+
+# PENDING
+./main exec pending
+PARENT:
+SIGUSR1 is pending
+CHILD:
+SIGUSR1 is not pending
