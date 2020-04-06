@@ -1,0 +1,4 @@
+ps u | grep main | sort | grep grep
+ls -l | sort | grep main
+sort commands
+find ../../ | grep zad4 | sort | tail -n 3
