@@ -1,5 +1,5 @@
 # SysOpy 2019/2020
-** Ćwiczenia: **
+**Ćwiczenia:**
 
 1. Zarządzanie pamięcią, biblioteki, pomiar czasu  
 2. Pliki  
